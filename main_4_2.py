@@ -10,4 +10,4 @@ def palindrome_check(tekst):
         return True
     else:
         return False
-    
+print(palindrome_check('kajak'))
