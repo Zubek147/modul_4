@@ -4,3 +4,10 @@
 #przetestuję słowo, które jest palindromem, żeby sprawdzić czy funkcja działa poprawnie
 #dla pewności sprawdzę kolejne słowo, które jest palindromem
 #przetestuję słowo, które nie jest palindromem, żeby sprawdzić drugi warunek funkcji i poprawność działania
+
+def palindrome_check(tekst):
+    if tekst == tekst[::-1]:
+        return True
+    else:
+        return False
+    
