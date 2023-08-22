@@ -12,3 +12,4 @@ def palindrome_check(tekst):
         return False
 print(palindrome_check('kajak'))
 print(palindrome_check('potop'))
+print(palindrome_check('rowerek'))
