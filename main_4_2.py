@@ -6,7 +6,7 @@
 #przetestuję słowo, które nie jest palindromem, żeby sprawdzić drugi warunek funkcji i poprawność działania
 
 def palindrome_check(tekst):
-    tekst = tekst.lower().replace(" ","").replace(",","")
+    tekst = tekst.lower().replace(" ","").replace(",","").replace("'","")
     return tekst == tekst[::-1] , f"{tekst} {'to' if tekst == tekst[::-1] else 'to nie'} palindrom."
 
 print(palindrome_check('Kajak'))
