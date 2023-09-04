@@ -6,10 +6,12 @@
 #przetestuję słowo, które nie jest palindromem, żeby sprawdzić drugi warunek funkcji i poprawność działania
 
 def palindrome_check(tekst):
-    if tekst == tekst[::-1]:
-        return True
-    else:
-        return False
-print(palindrome_check('kajak'))
-print(palindrome_check('potop'))
-print(palindrome_check('rowerek'))
+    tekst = tekst.lower()
+    return tekst == tekst[::-1] , f"{tekst} {'to' if tekst == tekst[::-1] else 'to nie'} palindrom."
+
+print(palindrome_check('Kajak'))
+print(palindrome_check('Anna'))
+print(palindrome_check('Madam, in Eden, I\'m Adam'))
+print(palindrome_check('Kobyła ma mały bok'))
+print(palindrome_check('Rowerek'))
+
