@@ -7,7 +7,7 @@
 
 def palindrome_check(tekst):
     tekst = tekst.lower().replace(" ","").replace(",","").replace("'","")
-    return tekst == tekst[::-1] , f"{tekst} {'to' if tekst == tekst[::-1] else 'to nie'} palindrom."
+    return tekst == tekst[::-1]
 
 print(palindrome_check('Kajak'))
 print(palindrome_check('Anna'))
